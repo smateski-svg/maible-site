@@ -99,7 +99,7 @@ footer{--msc:#2E6558}
 .dd{position:relative}
 .ddm{position:absolute;left:0;top:100%;padding-top:14px;display:none;z-index:5}
 .dd:hover .ddm,.dd:focus-within .ddm{display:block}
-.ddb{background:rgba(245,244,240,0.98);border:1px solid rgba(18,48,42,0.1);border-radius:4px;padding:8px;min-width:220px;border-radius:4px;box-shadow:0 14px 48px rgba(18,48,42,0.2)}
+.ddb{background:rgba(221,245,234,0.65);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);border:1px solid rgba(18,48,42,0.1);border-radius:4px;padding:8px;min-width:220px;border-radius:4px;box-shadow:0 14px 48px rgba(18,48,42,0.2)}
 .ddb a{display:flex;align-items:center;min-height:46px;padding:0 18px;border-radius:4px;text-decoration:none;color:#0B0F0E;font-weight:600;font-size:16px}
 .ddb a:hover{background:rgba(18,48,42,0.05)}
 .ac{display:block;text-decoration:none;color:#0B0F0E;background:#FFFFFF;border:1px solid rgba(18,48,42,0.1);border-radius:4px;padding:34px 34px 38px}
@@ -551,7 +551,7 @@ div:has(> .ft)>.ft:nth-child(2n){border-left:1px solid var(--ln) !important;padd
 /* ---- navigation like Augustus: flat full-width bar, logo cell left, links, black CTA right ---- */
 .navhold{transition:transform .35s cubic-bezier(.22,1,.36,1)}
 .navhold.nav-hide{transform:translateY(-100%)}
-.pillnav{width:100% !important;max-width:none !important;height:72px;padding:0 !important;margin:0 !important;border-radius:0 !important;background:#FFFFFF !important;-webkit-backdrop-filter:none !important;backdrop-filter:none !important;box-shadow:none !important;border:0 !important;border-bottom:1px solid rgba(18,48,42,0.1) !important;display:grid !important;grid-template-columns:auto minmax(0,1fr) auto !important;align-items:stretch !important;gap:0 !important}
+.pillnav{width:100% !important;max-width:none !important;height:72px;padding:0 !important;margin:0 !important;border-radius:0 !important;background:rgba(221,245,234,0.65) !important;-webkit-backdrop-filter:blur(16px) saturate(140%) !important;backdrop-filter:blur(16px) saturate(140%) !important;box-shadow:none !important;border:0 !important;border-bottom:1px solid rgba(18,48,42,0.1) !important;display:grid !important;grid-template-columns:auto minmax(0,1fr) auto !important;align-items:stretch !important;gap:0 !important}
 .pillnav::before,.pillnav::after{display:none !important}
 .pillnav .nleft,.pillnav .nlogo,.pillnav .nright{grid-row:1 !important}
 .pillnav .nlogo{grid-column:1 !important;order:0 !important;display:flex;align-items:center;padding:0 32px;border-right:1px solid rgba(18,48,42,0.1);justify-self:stretch}
@@ -564,7 +564,7 @@ div:has(> .ft)>.ft:nth-child(2n){border-left:1px solid var(--ln) !important;padd
 .pillnav .ncta .arr{display:none}
 .pillnav .mm summary{border-radius:2px}
 @media (max-width:1240px){.pillnav .nleft{display:none !important}.pillnav{grid-template-columns:auto minmax(0,1fr) auto !important}}
-@media (max-width:900px){.pillnav{height:60px;display:flex !important;justify-content:space-between}.pillnav .nlogo{padding:0 16px;border-right:0}.pillnav .navlogo{width:112px !important}.pillnav .ncta{height:44px;min-height:44px;padding:0 16px !important}}
+@media (max-width:900px){.pillnav{height:60px;display:flex !important;justify-content:space-between}.pillnav .nlogo{padding:0 16px;border-right:0}.pillnav .navlogo{width:112px !important}.pillnav .ncta{height:44px;min-height:44px;padding:0 16px !important}}@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.pillnav{background:#DDF5EA !important}.ddb,.mmp{background:#DDF5EA}}
 /* ---- polish: one type scale for everything below the hero ---- */
 .s3{font-size:clamp(36px,5.2vw,80px) !important;line-height:1.02 !important}
 .dx.s5{font-size:clamp(34px,4.8vw,72px) !important;line-height:1.06 !important}
@@ -1037,7 +1037,7 @@ textarea.fi{min-height:120px;padding:12px 14px;resize:vertical}
 .mm summary{list-style:none;cursor:pointer;min-height:44px;padding:0 20px;border-radius:6px;display:inline-flex;align-items:center;font-weight:700;font-size:16px;color:#0B0F0E;background:rgba(18,48,42,0.05)}
 .mm summary::-webkit-details-marker{display:none}
 .mm summary:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
-.mmp{position:absolute;right:0;top:calc(100% + 14px);background:rgba(245,244,240,0.98);border:1px solid rgba(18,48,42,0.1);border-radius:4px;padding:8px;min-width:250px;z-index:40;box-shadow:0 14px 48px rgba(18,48,42,0.2)}
+.mmp{position:absolute;right:0;top:calc(100% + 14px);background:rgba(221,245,234,0.65);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);border:1px solid rgba(18,48,42,0.1);border-radius:4px;padding:8px;min-width:250px;z-index:40;box-shadow:0 14px 48px rgba(18,48,42,0.2)}
 .mmp a{display:flex;align-items:center;min-height:46px;padding:0 18px;border-radius:4px;text-decoration:none;color:#0B0F0E;font-weight:600;font-size:16px}
 .mmp a.sub{padding-left:38px;font-weight:500;color:rgba(18,48,42,0.72)}
 .mmp a:hover{background:rgba(18,48,42,0.05)}
