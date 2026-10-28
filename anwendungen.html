@@ -42,7 +42,7 @@ a:focus-visible{outline:3px solid var(--acc);outline-offset:4px}
 .ncta{white-space:nowrap;flex:none;font-size:17px;font-weight:700;text-decoration:none;color:#12302A;background:#FF9F6B;padding:0 30px;border-radius:6px;display:inline-flex;align-items:center;min-height:48px}
 .ncta:hover{filter:brightness(0.9)}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 38px;font-weight:700;font-size:17px;text-decoration:none;border-radius:6px}
-.btn:hover{filter:brightness(1.12)}.btn:not(.ph-ghost):hover{filter:brightness(0.9)}
+.btn:hover{filter:brightness(1.12)}.btn.btn-ap:hover{filter:brightness(0.9)}
 .strike{position:relative;display:inline-block}
 .strike::after{content:"";position:absolute;left:-2%;right:-2%;top:52%;height:0.12em;background:#12302A;border-radius:0.06em}
 .hl{background:linear-gradient(var(--acc),var(--acc)) 0 56%/100% 0.94em no-repeat;color:var(--on-acc);padding:0 0.12em;border-radius:0.1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
@@ -156,9 +156,9 @@ a.chip:hover{background:rgba(255,255,255,0.1)}
 .fcard .pini{border-radius:4px;font-size:56px}
 .bgN .btn[style*="background:#12302A"]{background:var(--acc) !important;color:var(--on-acc) !important}
 .bgN .on .tile{background:var(--acc);border-top-color:var(--acc-soft)}
-.fwa{color:var(--acc)}.fwb{color:#0B0F0E}
-.bgN .fwa{color:var(--acc)}.bgN .fwb{color:#FFFFFF}
-.onv .fwa{color:var(--acc)}.onv .fwb{color:#FFFFFF}
+.fwa{color:#34D399}.fwb{color:#34D399}
+.bgN .fwa{color:#34D399}.bgN .fwb{color:#34D399}
+.onv .fwa{color:#34D399}.onv .fwb{color:#34D399}
 .bgL .strike::after{background:var(--acc)}
 .bgL .spec{border-top-color:rgba(18,48,42,0.2)}
 .bgL .spec a{color:#0B0F0E}
@@ -172,7 +172,7 @@ a.chip:hover{background:rgba(255,255,255,0.1)}
 .bgN .ttl-el{color:var(--acc-soft)}
 .on .tile .ttl-el{color:var(--on-acc)}
 .page{--acc:#2E6558;--acc-text:#12302A;--acc-soft:#12302A;--on-acc:#0B0F0E}
-.bgN,.flow,.an,.term,.tile.dk,.dk-scope,.cookie,.fhub{--acc:#2E6558;--acc-text:#2E6558;--acc-soft:#DDF5EA;--on-acc:#0B0F0E}
+.bgN,.flow,.an,.term,.tile.dk,.dk-scope,.cookie,.fhub{--acc:#34D399;--acc-text:#34D399;--acc-soft:#DDF5EA;--on-acc:#0B0F0E}
 .formcard{--acc:#2E6558;--acc-text:#12302A;--acc-soft:#12302A;--on-acc:#0B0F0E}
 .s1{font-size:clamp(48px,9.4vw,140px)}
 .s5{font-size:clamp(38px,6.4vw,100px)}
@@ -661,8 +661,8 @@ h1.d.s5{font-size:clamp(44px,6.6vw,104px) !important;line-height:1.02 !important
 @media (max-width:900px){.subh:not(.noart){min-height:0 !important}.subh:not(.noart) .h3h1,.subh:not(.noart) .eb{max-width:none}.subh .h3art{position:relative !important;top:auto !important;right:auto !important;width:100% !important}}
 @media (prefers-reduced-motion:reduce){.subart img{animation:none}}
 /* product names stand out in bold contexts, like FIRE in FIREwork */
-h1 .msn,h2 .msn,h3 .msn,strong .msn,b .msn,.d .msn,.pname .msn,.h3h1 .msn,.dx .msn{color:#2E6558 !important}
-.bgN h1 .msn,.bgN h2 .msn,.bgN h3 .msn,.bgN strong .msn,.bgN b .msn,.bgN .d .msn,.bgN .pname .msn{color:#2E6558 !important}
+h1 .msn,h2 .msn,h3 .msn,strong .msn,b .msn,.d .msn,.pname .msn,.h3h1 .msn,.dx .msn{color:#34D399 !important}
+.bgN h1 .msn,.bgN h2 .msn,.bgN h3 .msn,.bgN strong .msn,.bgN b .msn,.bgN .d .msn,.bgN .pname .msn{color:#34D399 !important}
 .subh .hdwrap{margin-top:24px}
 .subh .subclaim{margin:24px 0 0 !important;text-transform:none !important;max-width:52%}
 @media (max-width:900px){.subh .subclaim{max-width:none}}
@@ -926,7 +926,7 @@ h1 .msn,h2 .msn,h3 .msn,strong .msn,b .msn,.d .msn,.pname .msn,.h3h1 .msn,.dx .m
 .subh:has(.portrait){min-height:calc(130px + var(--col) * 1.44 + 80px) !important}
 /* the // in every label carries the accent colour */
 .sl{color:#2E6558}
-.bgN .sl,.ucdark .sl{color:#2E6558}
+.bgN .sl,.ucdark .sl{color:#34D399}
 /* compact pass for product pages */
 .prodh .h3h1{font-size:clamp(34px,4.2vw,64px) !important}
 .prodh .h3h1 .pname{font-size:1.15em !important}
@@ -963,7 +963,7 @@ h1 .msn,h2 .msn,h3 .msn,strong .msn,b .msn,.d .msn,.pname .msn,.h3h1 .msn,.dx .m
 .platdark .pidx{color:rgba(255,255,255,0.55) !important}
 .platdark .parr{color:#FFFFFF}
 .platdark .pshot{box-shadow:0 18px 40px -18px rgba(0,0,0,0.6)}
-.platdark .pname .fwb,.platdark .pname{color:#FFFFFF}
+.platdark .pname .fwb,.platdark .pname{color:#34D399}
 .platdark .pcell:hover{background:rgba(255,255,255,0.1)}
 /* FAQ page */
 .faqpage details.faq summary{font-size:clamp(17px,1.4vw,20px) !important}
@@ -1301,7 +1301,7 @@ body,.lead2,.h3lead p,.ben-t p,.sdx-i p,.fd-t,.tm-r,.ad-t{line-height:1.62}
     <div class="onv dk-scope" style="background:#12302A;color:#FFFFFF;border:2px solid var(--acc);border-radius:4px;padding:40px 40px 44px">
       <h3 class="d dn s4"><span class="fwa">FIRE</span><span class="fwb">work</span></h3>
       <p style="margin:18px 0 0;font-size:20px;line-height:1.5;max-width:34em">Mapping, validiertes FHIR-Repository und offene API. Alle drei Anwendungen greifen über dieselbe Schnittstelle zu.</p>
-      <div style="margin-top:28px"><a class="btn" href="fireworks" style="background:#FF9F6B;color:#12302A">FIREwork im Detail</a></div>
+      <div style="margin-top:28px"><a class="btn" href="fireworks" style="background:#12302A;color:#FFFFFF">FIREwork im Detail</a></div>
     </div>
     <h3 class="d s4" style="margin-top:96px">Und weitere von Partnern.</h3>
     <p style="margin:20px 0 0;font-size:20px;line-height:1.5;color:rgba(18,48,42,0.72);max-width:32em">Jede Anwendung, die FHIR spricht, kann andocken. Die Klinik entscheidet, wer Zugriff erhält.</p>
@@ -1314,7 +1314,7 @@ body,.lead2,.h3lead p,.ben-t p,.sdx-i p,.fd-t,.tm-r,.ad-t{line-height:1.62}
     <p class="eb"><span class="sl">//</span> Kontakt</p>
     <h2 class="d s9">Welche passt<br>zu Ihnen?</h2>
     <p style="margin:44px 0 0;font-size:clamp(20px,2.2vw,28px);line-height:1.35;font-weight:600;max-width:26em">Wir zeigen Ihnen die Anwendungen an Ihrem Fall.</p>
-    <div style="margin-top:44px"><a class="btn" href="mailto:kontakt@myscribe.de?subject=Anwendungen%20maible" style="background:#FF9F6B;color:#12302A;min-height:60px;padding:0 48px;font-size:20px">Anwendungen zeigen lassen</a></div>
+    <div style="margin-top:44px"><a class="btn" href="mailto:kontakt@myscribe.de?subject=Anwendungen%20maible" style="background:#12302A;color:#FFFFFF;min-height:60px;padding:0 48px;font-size:20px">Anwendungen zeigen lassen</a></div>
   </div>
 </section>
 </div>
