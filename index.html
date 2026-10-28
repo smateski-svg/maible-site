@@ -42,7 +42,7 @@ a:focus-visible{outline:3px solid var(--acc);outline-offset:4px}
 .ncta{white-space:nowrap;flex:none;font-size:17px;font-weight:700;text-decoration:none;color:#12302A;background:#FF9F6B;padding:0 30px;border-radius:6px;display:inline-flex;align-items:center;min-height:48px}
 .ncta:hover{filter:brightness(0.9)}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 38px;font-weight:700;font-size:17px;text-decoration:none;border-radius:6px}
-.btn:hover{filter:brightness(1.12)}.btn.btn-ap:hover{filter:brightness(0.9)}
+.btn:hover{filter:brightness(0.9)}
 .strike{position:relative;display:inline-block}
 .strike::after{content:"";position:absolute;left:-2%;right:-2%;top:52%;height:0.12em;background:#12302A;border-radius:0.06em}
 .hl{background:linear-gradient(var(--acc),var(--acc)) 0 56%/100% 0.94em no-repeat;color:var(--on-acc);padding:0 0.12em;border-radius:0.1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
@@ -86,7 +86,7 @@ a:focus-visible{outline:3px solid var(--acc);outline-offset:4px}
 .pimg{width:100%;aspect-ratio:4/5;border-radius:4px;background-image:url(assets/278c18fdb21e34fdb8f3a9ef0e4d8d55.svg);background-size:800% 100%;background-repeat:no-repeat}
 .av0{background-position:0% 0}.av1{background-position:14.2857% 0}.av2{background-position:28.5714% 0}.av3{background-position:42.8571% 0}.av4{background-position:57.1429% 0}.av5{background-position:71.4286% 0}.av6{background-position:85.7143% 0}.av7{background-position:100% 0}
 .bgN{--msc:#34D399}.bgV{--msc:#DDF5EA}.bgL{--msc:#2E6558}
-.msn{color:inherit}
+.msn{color:#34D399}
 .btn .msn{color:inherit}
 .pillnav{--msc:#2E6558}
 .cookie,.an,.fn{--msc:#34D399}
@@ -1063,7 +1063,7 @@ textarea.fi{min-height:120px;padding:12px 14px;resize:vertical}
 .cookie{border-radius:4px;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:860px;margin:0 auto;background:#12302A;color:#FFFFFF;border:1px solid rgba(255,255,255,0.22);padding:22px 26px;display:flex;gap:20px 28px;align-items:center;flex-wrap:wrap;box-shadow:0 16px 48px rgba(18,48,42,0.45)}
 .cookie p{margin:0;flex:1 1 340px;font-size:15px;line-height:1.5;color:rgba(245,244,240,0.86)}
 .cookie a{color:#FFFFFF}
-.cb{min-height:48px;padding:0 24px;border-radius:6px;font:inherit;font-weight:700;font-size:16px;cursor:pointer;border:0}
+.cb{min-height:48px;padding:0 24px;border-radius:6px;font:inherit;font-weight:700;font-size:16px;cursor:pointer;border:0}.cb-ap:hover{filter:brightness(0.9)}
 .cb:focus-visible{outline:3px solid var(--acc-soft);outline-offset:3px}
 .fnotes{margin-top:40px;padding-top:20px;border-top:1px solid rgba(18,48,42,0.1);font-size:13px;line-height:1.55;color:rgba(18,48,42,0.72)}
 .fnotes p{margin:0 0 4px}
@@ -1519,8 +1519,8 @@ body,.lead2,.h3lead p,.ben-t p,.sdx-i p,.fd-t,.tm-r,.ad-t{line-height:1.62}
 <div class="cookie" role="dialog" aria-label="Cookie-Einstellungen">
   <p>Wir nutzen nur technisch notwendige Cookies. Für Statistik und Marketing brauchen wir Ihre Einwilligung. Mehr in der <a href="datenschutz">Datenschutzerklärung</a>.</p>
   <div style="display:flex;gap:12px;flex-wrap:wrap">
-    <button class="cb" data-dc-click="rejectAll" style="background:#FFFFFF;color:#0B0F0E">Nur notwendige</button>
-    <button class="cb" data-dc-click="acceptAll" style="background:var(--acc);color:var(--on-acc)">Alle akzeptieren</button>
+    <button class="cb cb-ap" data-dc-click="rejectAll" style="background:#FF9F6B;color:#12302A">Nur notwendige</button>
+    <button class="cb cb-ap" data-dc-click="acceptAll" style="background:#FF9F6B;color:#12302A">Alle akzeptieren</button>
   </div>
 </div>
 </div>
